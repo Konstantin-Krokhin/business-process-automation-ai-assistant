@@ -7,4 +7,6 @@ embs = model.encode(docs, convert_to_numpy=True)
 index = faiss.IndexFlatL2(embs.shape[1])
 index.add(embs)
 faiss.write_index(index, "docs.index")
-with open("meta.pkl", "wb") as f: pickle.dump(docs, f)
+
+with open("meta.pkl", "wb") as f:
+	pickle.dump(docs, f)

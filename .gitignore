@@ -1,0 +1,21 @@
+# Ignore virtual environments
+venv/
+
+# Ignore system files
+.DS_Store
+
+# Bytecode/cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code or JetBrains IDE settings (optional)
+.vscode/
+.idea/
+
+# Environment or runtime-specific files
+.env
+
+vectorstore/
+
+docs/
